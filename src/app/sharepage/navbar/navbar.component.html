@@ -1,0 +1,58 @@
+<!-- Navbar -->
+
+<!-- <div class="container sticky-top"> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light  sticky-top   ">
+  <!-- Container wrapper -->
+  <div class="container-fluid container" >
+    <!-- Navbar brand -->
+    <a class="navbar-brand ms-auto" routerLink="" style="color:#006400;font-weight: bold; font-size: 20px; " >Shop Food</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="basicNavbar.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse "
+      id="navbarSupportedContent"
+      mdbCollapse
+      #basicNavbar="mdbCollapse"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-3 mb-lg-0 mx-auto" >
+       
+        <li class="nav-item">
+          <a class="nav-link  active"  aria-current="page" routerLinkActive="active-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active" aria-current="page" routerLinkActive="active-link" 
+           routerLink="/login" >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page"routerLinkActive="active-link"
+           routerLink="/Register" >Register</a
+          >
+        </li>
+      </ul>
+      <!-- Left links -->
+      <button type="button" class="btn btn-light w-5 " routerLink="/cart">  
+        <i class="fas fa-shopping-cart "></i>
+    </button>
+      <!-- Search form -->
+   
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  
+  <!-- Container wrapper -->
+</nav>
+<!-- </div> -->
+<!-- Navbar -->
