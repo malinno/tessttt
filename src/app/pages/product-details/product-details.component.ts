@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.scss'],
+  styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
   imgs = [
@@ -29,12 +29,13 @@ export class ProductDetailsComponent implements OnInit {
     id: 0,
     path: 'assets/5f17e04b49864fa5a095a3af37700dc3_1656286174222701846.jpg',
   };
+  
+  constructor() { }
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+  }
   showImg(path: string): void {
     this.titleImg.path = path;
   }
+
 }
