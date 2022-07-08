@@ -1,3 +1,5 @@
+@import "../../../responsive/responsive.scss";
+
 .title___2wxWx {
     font-size: 2.57142857rem;
     line-height: 1.33333333;
@@ -110,6 +112,37 @@ h4 {
     top: 50%;
     transform: translateY(-50%)
 }
-::placeholder{
-    text-align: center;
+
+
+.banner {
+  position: relative;
+  background-image: url('../../../assets/VN-new-2.jpg');
+  height: 52vh;
+
+  @include Responsive(XS) {
+    height: 30vh;
+  }
+
+  .wapper-card {
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  
+    i {
+      color: #cc0000;
+    }
+  
+    @include Responsive(XS) {
+      left: 0;
+      width: 100%;
+      height: 101%;
+      border-radius: 0;
+    }
+  }
 }
+

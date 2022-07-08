@@ -27,9 +27,9 @@ h3 {
 }
 
 img {
-      max-width: 100%;
-      filter: drop-shadow(1px 1px 3px $color-secondary);
-    }
+  max-width: 100%;
+  filter: drop-shadow(1px 1px 3px $color-secondary);
+}
 
 /* ----- Product Section ----- */
 .product {
@@ -209,6 +209,22 @@ footer {
 
     &:hover {
       color: $color-highlight;
+    }
+  }
+}
+
+
+.slick {
+  display: flex;
+  justify-content: center;
+
+  .carousel-style {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+    .carousel-arrow-prev {
+      left: -40px !important;
     }
   }
 }
