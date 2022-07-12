@@ -1,8 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
-.carousel-arrow-prev {
+@import "./responsive/responsive.scss";
+
+.carousel-style {
+
+  .carousel-arrow-prev {
     left: -40px !important;
+  
+    @include Responsive(XS) {
+      display: none;
+    }
   }
   
   .carousel-arrow-next {
     right: -40px !important;
+  
+    @include Responsive(XS) {
+      display: none;
+    }
   }
+}
+
+.carousel-home {
+  display: flex !important;
+  justify-content: center;
+
+  .carousel-container {
+    width: 90% !important;
+  }
+}
+
